@@ -24,7 +24,7 @@ jobs:
 
             - name: Report banana result
               run: |
-                NB_ERROR=$(cat coding-style-reports.logs |
+                NB_ERROR=$(cat coding-style-reports.log |
                 wc -l)
                 if [ $NB_ERROR -gt 0 ]; then
                     ERROR=$(cat coding-style-reports.log)
